@@ -23,7 +23,7 @@ use App\Http\Controllers\KuliahController;
 Route::get('/', [HomeController::class, 'index']) -> name('home');
 Route::get('/pengalaman', [KuliahController::class, 'kuliah']) -> name('pengalaman');
 Route::prefix('profil') -> group (function () {
-    Route::get('/alif', [ProfileController::class, 'rafi']);
+    Route::get('/alif', [ProfileController::class, 'alif']);
     Route::get('/andika', [ProfileController::class, 'andika']);
 }) -> name('profil');
 
