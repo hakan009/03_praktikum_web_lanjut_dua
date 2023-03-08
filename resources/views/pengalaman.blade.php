@@ -23,7 +23,7 @@
                             <h3 class="timeline-header"><a href="#">Hakan Alif Pramudya</a> create new story</h3>
 
                             <div class="timeline-body">
-                               Hidup gini-gini amat yakk
+                               Ywdh
                             </div>
                             <div class="timeline-footer">
                                 <a class="btn btn-primary btn-sm">Read more</a>

@@ -11,7 +11,7 @@
                 <div class="card card-primary card-outline">
                     <div class="card-body box-profile">
                         <div class="text-center">
-                            <img class="profile-user-img img-fluid " src="{{asset('image/rafi-profile.jpg')  }}"
+                            <img class="profile-user-img img-fluid " src="{{asset('image/fotoHakan.jpg')  }}"
                                 alt="User profile picture">
                         </div>
 
@@ -34,14 +34,14 @@
                         <strong><i class="fas fa-book mr-1"></i> Pendidikan</strong>
 
                         <p class="text-muted">
-                            SMAN 1 GARUM
+                            SMAN 13 SURABAYA
                         </p>
 
                         <hr>
 
                         <strong><i class="fas fa-map-marker-alt mr-1"></i> Alamat</strong>
 
-                        <p class="text-muted">Wlingi, Kab Blitar Jawa Timur</p>
+                        <p class="text-muted">Kebraon, Surabaya</p>
 
                     </div>
                     <!-- /.card-body -->
@@ -60,14 +60,14 @@
 
                                 <div class="row mb-3">
                                     <div class="col-sm-6">
-                                        <img class="img-fluid" src="{{asset('image/bromo.png') }}" alt="Photo">
+                                        <img class="img-fluid" src="https://picsum.photos/200/300" alt="Photo">
                                     </div>
                                     <!-- /.col -->
                                     <div class="col-sm-6">
                                         <div class="row">
                                             <div class="col-sm-6">
 
-                                                <img class="img-fluid mb-3" src="{{asset('image/paris.jpg')  }}"
+                                                <img class="img-fluid mb-3" src="https://picsum.photos/200/300"
                                                     alt="Photo">
                                             </div>
                                             <!-- /.col -->
