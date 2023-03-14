@@ -106,6 +106,14 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="/product" class="nav-link">
+                                <i class="nav-icon fas fa-book"></i>
+                                <p>
+                                    Praktikum3
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

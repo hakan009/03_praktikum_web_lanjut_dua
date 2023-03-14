@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KuliahController;
+use App\Http\Controllers\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,5 +28,7 @@ Route::prefix('profil') -> group (function () {
     Route::get('/alif', [ProfileController::class, 'alif']);
     Route::get('/andika', [ProfileController::class, 'andika']);
 }) -> name('profil');
+Route::get('/product', [ProductController::class, 'tampil']) -> name('product');
+
 
 
