@@ -19,6 +19,7 @@ use App\Http\Controllers\ProductController;
 */
 
 // Auth::routes();
+//cek
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
