@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class product extends Model
 {
-    protected $table = 'product';
+    public $table = 'product';
+    public static function tampil()
+    {
+        return product::all();
+    }
 }
