@@ -10,11 +10,11 @@
             <th>Nama</th>
             <th>Status</th>
         </tr>
-        @foreach($data_product as $p)
+        @foreach($data_product as $d)
     <tr>
-        <td>{{$p['id']}}</td>
-        <td>{{$p['nama']}}</td>
-        <td>{{$p['status']}}</td>
+        <td>{{$d['id']}}</td>
+        <td>{{$d['nama']}}</td>
+        <td>{{$d['status']}}</td>
     </tr>
     @endforeach
     </table>

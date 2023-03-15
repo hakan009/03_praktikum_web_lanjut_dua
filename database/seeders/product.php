@@ -45,6 +45,11 @@ class product extends Seeder
             'id' => 6666,
             'nama' => 'Hoodie',
             'status' => 'Lelang'
+        ],
+        [
+            'id' => 7777,
+            'nama' => 'Sepatu',
+            'status' => 'Lelang'
         ]];
         DB::table('product')->insert($data);
 
