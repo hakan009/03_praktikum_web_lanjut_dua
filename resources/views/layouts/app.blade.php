@@ -110,7 +110,7 @@
                             <a href="/product" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
-                                    Praktikum3
+                                    Data Buku
                                 </p>
                             </a>
                         </li>

@@ -1,22 +1,60 @@
 @extends('layouts.app')
 @section('title', 'Product')
 @section('content')
-
-    <table class="table table-striped">
-        <h2 style="text-align: center;">Tabel Product</h2>
-        <br>
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left mt-2">
+                <h2>JURUSAN TEKNOLOGI INFORMASI-POLITEKNIK NEGERI MALANG</h2>
+            </div>
+            <div>
+            <div class="float-right my-2">
+                <a class="btn btn-success" href="{{ route('Praktikum.create') }}"> Input Data Buku</a>
+            </div>
+            </form>
+    </div>
+        </div>
+    </div>
+ 
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
+ 
+    <table class="table table-bordered">
         <tr>
-            <th>ID</th>
+            <th>Nim</th>
             <th>Nama</th>
-            <th>Status</th>
+            <th>Kelas</th>
+            <th>Jurusan</th>
+            <th>No_Handphone</th>
+            <th>Email</th>
+            <th>Tanggal_Lahir</th>
+            <th width="280px">Action</th>
         </tr>
-        @foreach($product as $d)
-    <tr>
-        <td>{{$d['id']}}</td>
-        <td>{{$d['nama']}}</td>
-        <td>{{$d['status']}}</td>
+            @foreach ($mahasiswas as $Mahasiswa)
+        <tr>
+            <td>{{ $Mahasiswa->Nim }}</td>
+            <td>{{ $Mahasiswa->Nama }}</td>
+            <td>{{ $Mahasiswa->Kelas }}</td>
+            <td>{{ $Mahasiswa->Jurusan }}</td>
+            <td>{{ $Mahasiswa->No_Handphone }}</td>
+            <td>{{ $Mahasiswa->Email }}</td>
+            <td>{{ $Mahasiswa->Tanggal_Lahir }}</td>
+            <td>
+        <form action="{{ route('mahasiswa.destroy',$Mahasiswa->Nim) }}" method="POST">
+ 
+        <a class="btn btn-info" href="{{ route('mahasiswa.show',$Mahasiswa->Nim) }}">Show</a>
+
+        <a class="btn btn-primary" href="{{ route('mahasiswa.edit',$Mahasiswa->Nim) }}">Edit</a>
+        @csrf
+
+        @method('DELETE')
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+        </td>
     </tr>
     @endforeach
     </table>
-
+    {{$mahasiswas->links()}}
 @endsection
